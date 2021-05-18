@@ -38,12 +38,14 @@ def start():
 	logger.debug("Requested /")
 	return render_template("start.html")
 
+
 @app.route("/r")
 def capture():
 	logger.debug("Requested capture")
 	im = camera.get_frame(_bytes=False)
 	capture_and_save(im)
 	return render_template("send_to_init.html")
+
 
 @app.route("/images/last")
 def last_image():
@@ -64,15 +66,18 @@ def gen(camera):
 		yield (b'--frame\r\n'
 			   b'Content-Type: image/png\r\n\r\n' + frame + b'\r\n')
 
+
 @app.route("/stream")
 def stream_page():
 	logger.debug("Requested stream page")
 	return render_template("stream.html")
 
+
 @app.route("/video_feed")
 def video_feed():
 	return Response(gen(camera),
 		mimetype="multipart/x-mixed-replace; boundary=frame")
+
 
 if __name__=="__main__":
 	# socketio.run(app,host="0.0.0.0",port="3005",threaded=True)

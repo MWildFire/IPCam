@@ -1,8 +1,16 @@
 {% extends "base.html" %}
 {% block head %}
     <title>Stream</title>
+    <link rel="stylesheet" href="../static/stream.css">
 {% endblock %}
 {% block content %}
+    <div class="video-box">
         <h1>Video Stream</h1>
         <img src="{{ url_for('video_feed') }}">
+        <div>
+            <a href="/r">
+                <img class="photo" src="../static/camera-fill.svg" alt="" >
+            </a>
+        </div>
+    </div>
 {% endblock %}

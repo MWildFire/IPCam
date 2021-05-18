@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 {% block head %}
     <title>Webcam</title>
+    <link rel="stylesheet" href="../static/stream.css">
 {% endblock %}
 {% block content %}
+    <div class="video-box">
         <h1>Last image:</h1>
         <img src="/images/last" style="border: 3px solid black"/>
         <br>
-        <a href="/r"><button>Take photo</button></a>
-        <a href="/stream" target="blank"><button>Stream</button></a>
+        <a href="/r"><img class="photo" src="../static/camera-fill.svg" alt=""></a>
+        <a href="/stream" target="blank"><img class="photo" src="../static/cast.svg" alt=""></a>
+    </div>
 {% endblock %}
