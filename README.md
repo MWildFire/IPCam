@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 ### Try #2: ###
 ```
-pip install flask opencv-python
+pip install flask opencv-pythonQAA
 ```
 If it gets any error, probably with `opencv-python` try to install them manually.
 

@@ -27,10 +27,16 @@ def add_header(r):
 	r.headers["Cache-Control"] = "public, max-age=0"
 	return r
 
-@app.route("/")
+@app.route("/camera")
 def entrypoint():
-	logger.debug("Requested /")
+	logger.debug("Requested /camera")
 	return render_template("index.html")
+
+
+@app.route("/")
+def start():
+	logger.debug("Requested /")
+	return render_template("start.html")
 
 @app.route("/r")
 def capture():
