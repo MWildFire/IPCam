@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block head %}
+   <title>Настройки</title>
+{% endblock %}
+{% block content %}
+   <div class="d-flex justify-content-center mt-5">
+        <form method="post" action="/settings" style="border: 2px solid #3d1240; padding: 20px 20px;">
+            <div class="mb-3">
+            <label for="exampleInputEmail3" class="form-label">Username</label>
+            <input name='username' type="text" class="form-control w-auto" id="exampleInputEmail3" aria-describedby="emailHelp">
+          </div>
+           <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">ФИО</label>
+            <input name='fio' type="text" class="form-control w-auto" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <button type="submit" class="btn text-light" style="background-color: #3d1240">Обновить данные</button>
+        </form>
+    </div>
+{% endblock %}

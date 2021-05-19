@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block head %}
+   <title>Профиль</title>
+{% endblock %}
+{% block content %}
+    <div class="d-flex justify-content-center">
+        <img src="../static/default-monochrome-black.svg" width="500" height="200" style="margin:auto">
+    </div>
+    <div class="container mt-5" style="width: 400px; border: 2px solid #3d1240; padding: 20px 20px;">
+      <div class="row justify-content-md-center">
+        <div class="col sm-1">
+          Username:
+        </div>
+        <div class="col sm-1">
+          {{ user.username }}
+        </div>
+      </div>
+    <div class="row justify-content-md-center">
+        <div class="col sm-1">
+          Email:
+        </div>
+        <div class="col sm-1">
+          {{ user.email }}
+        </div>
+      </div>
+    <div class="row justify-content-md-center">
+        <div class="col sm-1">
+          FIO:
+        </div>
+        <div class="col sm-1">
+          {{ user.name }}
+        </div>
+      </div>
+
+
+    </div>
+{% endblock %}

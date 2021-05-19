@@ -1,8 +1,202 @@
 {% extends "base.html" %}
 {% block head %}
-    <title>Stream</title>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="../static/animate.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../static/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="../static/font-awesome.min.css">
+    <!-- google font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../static/templatemo-style.css">
 {% endblock %}
 {% block content %}
-        <h1>Start Page</h1>
-        
+    <body>
+        <!-- start preloader -->
+        <div class="preloader">
+            <div class="sk-spinner sk-spinner-rotating-plane"></div>
+         </div>
+        <!-- end preloader -->
+        <!-- start navigation -->
+
+        <!-- end navigation -->
+        <!-- start home -->
+        <section id="home">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10 wow fadeIn" data-wow-delay="0.3s">
+                            <h1 class="text-upper">IP Camera</h1>
+                            <p class="tm-white">IP Сamera-сервис, который поможет вам запечатлеть своё фото с подключенной камеры и любого устройства. В недалёком будущем мы предоставим API для работы с IP камерами. Присоединяйся к нам :)</p>
+                            <img src="../static/software-img.png" class="img-responsive" alt="home img" width="400" height="400" style="margin-left: 60px">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end home -->
+        <!-- start divider -->
+        <section id="divider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cast" viewBox="0 0 16 16">
+                          <path d="m7.646 9.354-3.792 3.792a.5.5 0 0 0 .353.854h7.586a.5.5 0 0 0 .354-.854L8.354 9.354a.5.5 0 0 0-.708 0z"/>
+                          <path d="M11.414 11H14.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h3.086l-1 1H1.5A1.5 1.5 0 0 1 0 10.5v-7A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-2.086l-1-1z"/>
+                        </svg>
+                        <h3 class="text-uppercase">Трансляция</h3>
+                        <p>После регистрации вы сможете ретранслировать видео со своей веб-камеры, или камеры телефона прямо на сайт. Вы сможете увидеть своё изображение и использовать его в OBS, Discord, или Skype</p>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                          <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                          <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                        </svg>
+                        <h3 class="text-uppercase">Фото</h3>
+                        <p>Во время трансляции вы можете сделать фотографию, которое сохранится на ваше устройство. Очень удобный инструмент, чтобы передавать приветы. </p>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp templatemo-box" data-wow-delay="0.3s">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-terminal-fill" viewBox="0 0 16 16">
+                          <path d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm-6.354-.354a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146z"/>
+                        </svg>
+                        <h3 class="text-uppercase">Масштабируемость</h3>
+                        <p>В ближайшем будущем мы представим API для работы со сторонними камерами видеонаблюдения, ждите новых новостей о сотрудничестве. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end divider -->
+
+        <!-- start feature -->
+        <section id="feature">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s">
+                        <h2 class="text-uppercase">Наши ключевые возможности</h2>
+                        <p>Бесплатно представляем абсолютно уникальные функции</p>
+                       <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-check-fill" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm8.854-9.646a.5.5 0 0 0-.708-.708L7.5 7.793 6.354 6.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                            </svg>
+                            Своим пользователям мы предоставляем абсолютно уникальный функционал на рынке бесплатных сервисов. Среди конкруетнтов, помимо самой цены, мы будем выделяться стабильность и гораздо более широкой моделью использования</p>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-dash-fill" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z"/>
+                            </svg>
+                            Помимо бесплатного использования, мы планируем сотрудничать и дружить со всеми компаниями, которые обеспечивают системами видеонаблюдения дома, компания и государства.
+                        </p>
+                    </div>
+                    <div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+                        <img src="../static/camera2.png" class="img-responsive" alt="feature img" style="margin-left: 20px">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end feature -->
+
+        <!-- start download -->
+        <section id="download">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.6s" style="margin-top: 100px">
+                        <h2 class="text-uppercase">Начало работы</h2>
+                        <p>Для предоставления науилучшего сервиса мы предоставляем возможность пользовать вышеупомянутым только зарегистрированным пользователям. После регистрации для вас станет активна кнопка с камерой в левом верхнем углу</p>
+                        <a href="/register" class="btn btn-primary text-uppercase">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square-fill" viewBox="0 0 16 16">
+                              <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM5.904 10.803 10 6.707v2.768a.5.5 0 0 0 1 0V5.5a.5.5 0 0 0-.5-.5H6.525a.5.5 0 1 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 .707.707z"/>
+                            </svg>
+                            Регистрация
+                        </a>
+                    </div>
+                    <div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
+                        <img src="../static/camera3.png" class="img-responsive mb-2" alt="feature img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end download -->
+
+        <!-- start contact -->
+        <section id="contact">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <h2 class="text-uppercase">Свяжитесь с нами</h2>
+                            <p>Мы открыты для всех видов сообщения. С радостью воспримем как конструктивную критику, так и предложение о сотрудничестве</p>
+                            <address>
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                                      <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                                    </svg>
+                                    Москва, Россия
+                                </p>
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                    </svg>
+                                    +7(903)133-00-80
+                                </p>
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                    </svg>
+                                    nnwatchproject@gmail.com
+                                </p>
+                            </address>
+                        </div>
+                        <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="contact-form">
+                                <form action="/send-client" method="post">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Имя">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" class="form-control" placeholder="Расскажите, что у вас на душе">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea class="form-control" placeholder="Message" rows="4"></textarea>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <input type="submit" class="form-control text-uppercase" value="Отправить">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end contact -->
+
+        <!-- start footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <p>Copyright © 2021 IP Camera</p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+        <script src="../static/js/jquery.js"></script>
+        <script src="../static/js/bootstrap.min.js"></script>
+        <script src="../static/js/wow.min.js"></script>
+        <script src="../static/js/jquery.singlePageNav.min.js"></script>
+        <script src="../static/js/custom.js"></script>
+    </body>
 {% endblock %}
