@@ -51,9 +51,10 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #dcb92e;
+    background-color: #d8b52a;
 }
 
 .cam_button {
     margin-left: 2vh;
+    margin-top: 0.5vh;
 }
